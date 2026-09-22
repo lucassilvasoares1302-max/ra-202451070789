@@ -16,3 +16,5 @@ Em cada disciplina:
 
 - `aulas/` — exercícios práticos realizados em aula
 - `trabalhos/` — trabalhos e entregas avaliativas
+
+- Conteúdo abordado no trabalho semestral | Geração fotovoltaica de usinas em MG |
