@@ -1,4 +1,34 @@
 
+
+:root {
+  --cor-verde-escuro: #17452f;
+  --cor-verde: #2f6b4a;
+  --cor-verde-medio: #6d9b7c;
+  --cor-verde-claro: #edf5ef;
+  --cor-verde-secao: #d8e8dc;
+  --cor-amarelo: #d6b84c;
+  --cor-amarelo-claro: #e0c45a;
+  --cor-link: #7a5f0d;
+  --cor-texto: #173b2a;
+  --cor-branco: #ffffff;
+  --cor-borda-formulario: #8aac96;
+
+  --fonte-base: 1rem;
+  --fonte-pequena: 0.95rem;
+  --fonte-titulo: 1.4rem;
+  --fonte-subtitulo: 1.8rem;
+  --fonte-secao: 2rem;
+
+  --espaco-pequeno: 0.5rem;
+  --espaco-medio: 1rem;
+  --espaco-grande: 2rem;
+  --espaco-secao: 4rem;
+
+  --raio-pequeno: 0.375rem;
+  --raio-medio: 0.625rem;
+}
+
+
 * {
   margin: 0;
   padding: 0;
@@ -11,319 +41,322 @@ html {
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-  color: #173b2a;
-  line-height: 1.6;
+  color: var(--cor-texto);
+  background-color: var(--cor-verde-claro);
+  font-size: var(--fonte-base);
+  line-height: 1.5;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .container {
   width: 90%;
-  max-width: 1200px;
+  max-width: 75rem;
   margin: 0 auto;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible {
+  outline: 0.2rem solid var(--cor-amarelo);
+  outline-offset: 0.2rem;
+}
+
+a,
+button {
+  min-height: 2.5rem;
 }
 
 
 header {
-  background-color: #17452f;
-  color: white;
-  padding: 20px 0;
-  border-bottom: 3px solid #d6b84c;
+  background-color: var(--cor-verde-escuro);
+  color: var(--cor-branco);
+  padding: var(--espaco-medio) 0;
+  border-bottom: 0.1875rem solid var(--cor-amarelo);
 }
 
 .header-container {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  gap: var(--espaco-medio);
   align-items: center;
+  text-align: center;
 }
 
 header h1 {
-  font-size: 1.4rem;
+  font-size: var(--fonte-titulo);
 }
 
 nav ul {
   list-style: none;
   display: flex;
-  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: var(--espaco-medio);
 }
 
 nav a {
-  color: white;
+  display: flex;
+  align-items: center;
+  padding: var(--espaco-pequeno);
+  color: var(--cor-branco);
   text-decoration: none;
   font-weight: 500;
-  transition: 0.3s;
 }
 
 nav a:hover {
-  color: #e0c45a;
+  color: var(--cor-amarelo-claro);
+}
+
+
+main {
+  display: grid;
+  grid-template-areas:
+    "hero"
+    "geracao"
+    "projetos"
+    "contato";
+}
+
+#hero {
+  grid-area: hero;
+}
+
+#geracaoporusina {
+  grid-area: geracao;
+}
+
+#projetos {
+  grid-area: projetos;
+}
+
+#contato {
+  grid-area: contato;
 }
 
 
 #hero {
-  background-color: #edf5ef;
-  padding: 65px 0;
+  background-color: var(--cor-verde-claro);
+  padding: var(--espaco-secao) 0;
 }
 
 .hero-container {
   display: grid;
-
-  grid-template-columns: 1fr 1.5fr;
-
+  grid-template-columns: 1fr;
   grid-template-areas:
-    "imagem texto"
-    "sobre imagem2";
-
-  gap: 50px;
-
+    "imagem"
+    "texto"
+    "sobre"
+    "imagem2";
+  gap: var(--espaco-grande);
   align-items: center;
 }
 
-
 .hero-imagem {
   grid-area: imagem;
+  display: grid;
+  justify-items: center;
 }
 
 .hero-imagem img {
   width: 100%;
-  max-width: 430px;
-  height: 270px;
-
+  max-width: 26.875rem;
+  border-radius: var(--raio-medio);
+  box-shadow: 0 0.375rem 1.25rem rgba(23, 69, 47, 0.18);
   object-fit: cover;
-
-  border-radius: 10px;
-
-  box-shadow: 0 6px 20px rgba(23, 69, 47, 0.18);
 }
-
 
 .hero-text {
   grid-area: texto;
+  display: grid;
+  gap: var(--espaco-medio);
 }
 
 .hero-text h2,
 .sobre-resumo h2 {
-  color: #2f6b4a;
-  font-size: 1.8rem;
-  margin-bottom: 20px;
+  color: var(--cor-verde);
+  font-size: var(--fonte-subtitulo);
 }
 
-.hero-text p {
-  margin-bottom: 15px;
+.hero-text p,
+.sobre-resumo p {
+  overflow-wrap: anywhere;
 }
 
-
-/* SOBRE */
 
 .sobre-resumo {
   grid-area: sobre;
+  display: grid;
+  gap: var(--espaco-medio);
 }
 
-.sobre-resumo p {
-  margin-bottom: 12px;
-}
-
-
-/* SEGUNDA IMAGEM */
 
 .hero-imagem-secundaria {
   grid-area: imagem2;
-  text-align: center;
+  display: grid;
+  justify-items: center;
 }
 
 .hero-imagem-secundaria img {
   width: 75%;
-  max-height: 250px;
-  object-fit: contain;
+  max-width: 30rem;
 }
 
+
 #geracaoporusina {
-  background-color: #d8e8dc;
-  padding: 65px 0;
+  background-color: var(--cor-verde-secao);
+  padding: var(--espaco-secao) 0;
+}
+
+#geracaoporusina > .container {
+  display: grid;
+  gap: var(--espaco-grande);
 }
 
 #geracaoporusina h2 {
-  color: #17452f;
-  font-size: 2rem;
-  margin-bottom: 35px;
+  color: var(--cor-verde-escuro);
+  font-size: var(--fonte-secao);
 }
 
-
 .geracaoporusina-horizontal {
-  background-color: #edf5ef;
-
-  border: 2px solid #6d9b7c;
-  border-radius: 10px;
-
-  padding: 28px;
-
-  margin-bottom: 25px;
-
+  background-color: var(--cor-verde-claro);
+  border: 0.125rem solid var(--cor-verde-medio);
+  border-radius: var(--raio-medio);
+  padding: var(--espaco-grande);
   display: grid;
-
-  grid-template-columns: 40% 60%;
-
-  gap: 35px;
-
+  grid-template-columns: 1fr;
+  gap: var(--espaco-grande);
   align-items: center;
 }
 
+.geracaoporusina-info {
+  display: grid;
+  gap: var(--espaco-medio);
+}
 
-/* INFORMAÇÕES DA USINA */
 
 .usina-cabecalho {
   display: flex;
-
-  align-items: center;
-
-  gap: 25px;
-
-  margin-bottom: 20px;
-
   flex-wrap: wrap;
+  align-items: center;
+  gap: var(--espaco-medio);
 }
 
 .usina-cabecalho h3 {
-  color: #2f6b4a;
-
+  color: var(--cor-verde);
   font-size: 1.3rem;
 }
 
 .kwp,
 .cidade {
-  font-size: 0.95rem;
+  font-size: var(--fonte-pequena);
 }
-
-
-/* IMAGEM DA USINA */
 
 .usina-imagem img {
   width: 100%;
-
-  height: 180px;
-
+  border-radius: var(--raio-pequeno);
   object-fit: cover;
-
-  border-radius: 7px;
 }
 
 
 .geracaoporusina-descricao {
-  padding: 10px;
+  display: grid;
+  gap: var(--espaco-medio);
+  padding: var(--espaco-pequeno);
 }
-
-.geracaoporusina-descricao p {
-  margin-bottom: 25px;
-}
-
-
-/* LINK SAIBA MAIS */
 
 .saiba-mais {
-  margin-top: 30px;
-
   font-weight: 500;
 }
 
 .saiba-mais a {
-  color: #a78317;
-
+  color: var(--cor-link);
   font-weight: 700;
-
   text-decoration: none;
 }
 
 .saiba-mais a:hover {
-  color: #17452f;
-
+  color: var(--cor-verde-escuro);
   text-decoration: underline;
 }
 
 
 #projetos {
-  background-color: #edf5ef;
+  background-color: var(--cor-verde-claro);
+  padding: var(--espaco-secao) 0;
+}
 
-  padding: 65px 0;
+#projetos > .container {
+  display: grid;
+  gap: var(--espaco-grande);
 }
 
 #projetos h2 {
-  color: #2f6b4a;
-
-  font-size: 2rem;
-
-  margin-bottom: 35px;
+  color: var(--cor-verde);
+  font-size: var(--fonte-secao);
 }
-
 
 .grid-projetos {
   display: grid;
-
-  grid-template-columns: repeat(3, 1fr);
-
-  gap: 25px;
+  grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
+  gap: var(--espaco-grande);
 }
 
-
 .projeto {
-  background-color: #ffffff;
-
-  border: 2px solid #6d9b7c;
-
-  border-radius: 10px;
-
-  padding: 25px;
+  background-color: var(--cor-branco);
+  border: 0.125rem solid var(--cor-verde-medio);
+  border-radius: var(--raio-medio);
+  padding: var(--espaco-grande);
+  display: grid;
+  gap: var(--espaco-medio);
 }
 
 .projeto h3 {
-  color: #2f6b4a;
-
-  margin-bottom: 15px;
-
+  color: var(--cor-verde);
   font-size: 1.2rem;
-}
-
-.projeto p {
-  margin-bottom: 12px;
 }
 
 
 #contato {
-  background-color: #edf5ef;
+  background-color: var(--cor-verde-claro);
+  padding: var(--espaco-secao) 0;
+}
 
-  padding: 65px 0;
+#contato > .container {
+  display: grid;
+  gap: var(--espaco-grande);
 }
 
 #contato h2 {
-  color: #2f6b4a;
-
-  font-size: 2rem;
-
-  margin-bottom: 30px;
+  color: var(--cor-verde);
+  font-size: var(--fonte-secao);
 }
 
 
-/* FORMULÁRIO */
-
 form {
-  max-width: 700px;
+  width: 100%;
+  max-width: 43.75rem;
+  display: grid;
+  gap: var(--espaco-pequeno);
+}
 
-  display: flex;
-
-  flex-direction: column;
-
-  gap: 15px;
+form label {
+  font-weight: 600;
 }
 
 form input,
 form textarea {
   width: 100%;
-
-  padding: 12px;
-
-  border: 1px solid #8aac96;
-
-  border-radius: 6px;
-
+  padding: 0.75rem;
+  border: 0.0625rem solid var(--cor-borda-formulario);
+  border-radius: var(--raio-pequeno);
   font-family: inherit;
-
-  font-size: 1rem;
+  font-size: var(--fonte-base);
 }
 
 form textarea {
@@ -331,50 +364,38 @@ form textarea {
 }
 
 form button {
-  width: 120px;
-
-  padding: 12px;
-
-  background-color: #2f6b4a;
-
-  color: white;
-
+  width: fit-content;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
   border: none;
-
-  border-radius: 6px;
-
+  border-radius: var(--raio-pequeno);
   cursor: pointer;
-
-  font-size: 1rem;
-
-  transition: 0.3s;
+  font-size: var(--fonte-base);
 }
 
 form button:hover {
-  background-color: #17452f;
+  background-color: var(--cor-verde-escuro);
 }
 
 
 footer {
-  background-color: #17452f;
-
-  color: white;
-
-  padding: 30px 0;
-
+  background-color: var(--cor-verde-escuro);
+  color: var(--cor-branco);
+  padding: var(--espaco-grande) 0;
   text-align: center;
-
-  border-top: 3px solid #d6b84c;
+  border-top: 0.1875rem solid var(--cor-amarelo);
 }
 
-footer p {
-  margin-bottom: 8px;
+footer .container {
+  display: grid;
+  gap: var(--espaco-pequeno);
 }
 
 footer a {
-  color: #e0c45a;
-
+  color: var(--cor-amarelo-claro);
   text-decoration: none;
+  overflow-wrap: anywhere;
 }
 
 footer a:hover {
@@ -382,79 +403,38 @@ footer a:hover {
 }
 
 
-@media (max-width: 900px) {
+@media (min-width: 56.25rem) {
 
   .header-container {
-    flex-direction: column;
-
-    gap: 20px;
-
-    text-align: center;
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
   }
-
-  nav ul {
-    flex-wrap: wrap;
-
-    justify-content: center;
-  }
-
 
   .hero-container {
-    grid-template-columns: 1fr;
-
+    grid-template-columns: 1fr 1.5fr;
     grid-template-areas:
-      "imagem"
-      "texto"
-      "sobre"
-      "imagem2";
+      "imagem texto"
+      "sobre imagem2";
   }
-
-  .hero-imagem {
-    text-align: center;
-  }
-
-  .hero-imagem img {
-    max-width: 500px;
-  }
-
 
   .geracaoporusina-horizontal {
-    grid-template-columns: 1fr;
+    grid-template-columns: 2fr 3fr;
   }
-
-
-  .grid-projetos {
-    grid-template-columns: 1fr;
-  }
-
 }
 
 
-@media (max-width: 550px) {
 
-  nav ul {
-    gap: 12px;
-
-    font-size: 0.9rem;
-  }
+@media (min-width: 75rem) {
 
   #hero,
   #geracaoporusina,
   #projetos,
   #contato {
-    padding: 45px 0;
+    padding: 5rem 0;
   }
 
-  .geracaoporusina-horizontal {
-    padding: 20px;
+  .hero-container {
+    gap: 3rem;
   }
-
-  .usina-cabecalho {
-    flex-direction: column;
-
-    align-items: flex-start;
-
-    gap: 5px;
-  }
-
 }
