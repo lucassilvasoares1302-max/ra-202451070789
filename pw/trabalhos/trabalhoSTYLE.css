@@ -1,5 +1,3 @@
-
-
 :root {
   --cor-verde-escuro: #17452f;
   --cor-verde: #2f6b4a;
@@ -35,9 +33,11 @@
   box-sizing: border-box;
 }
 
+
 html {
   scroll-behavior: smooth;
 }
+
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
@@ -47,17 +47,20 @@ body {
   line-height: 1.5;
 }
 
+
 img {
   display: block;
   max-width: 100%;
   height: auto;
 }
 
+
 .container {
   width: 90%;
   max-width: 75rem;
   margin: 0 auto;
 }
+
 
 a:focus-visible,
 button:focus-visible,
@@ -67,11 +70,11 @@ textarea:focus-visible {
   outline-offset: 0.2rem;
 }
 
+
 a,
 button {
   min-height: 2.5rem;
 }
-
 
 header {
   background-color: var(--cor-verde-escuro);
@@ -79,6 +82,7 @@ header {
   padding: var(--espaco-medio) 0;
   border-bottom: 0.1875rem solid var(--cor-amarelo);
 }
+
 
 .header-container {
   display: flex;
@@ -88,9 +92,11 @@ header {
   text-align: center;
 }
 
+
 header h1 {
   font-size: var(--fonte-titulo);
 }
+
 
 nav ul {
   list-style: none;
@@ -99,6 +105,7 @@ nav ul {
   justify-content: center;
   gap: var(--espaco-medio);
 }
+
 
 nav a {
   display: flex;
@@ -109,10 +116,10 @@ nav a {
   font-weight: 500;
 }
 
+
 nav a:hover {
   color: var(--cor-amarelo-claro);
 }
-
 
 main {
   display: grid;
@@ -123,27 +130,31 @@ main {
     "contato";
 }
 
+
 #hero {
   grid-area: hero;
 }
+
 
 #geracaoporusina {
   grid-area: geracao;
 }
 
+
 #projetos {
   grid-area: projetos;
 }
+
 
 #contato {
   grid-area: contato;
 }
 
-
 #hero {
   background-color: var(--cor-verde-claro);
   padding: var(--espaco-secao) 0;
 }
+
 
 .hero-container {
   display: grid;
@@ -157,11 +168,13 @@ main {
   align-items: center;
 }
 
+
 .hero-imagem {
   grid-area: imagem;
   display: grid;
   justify-items: center;
 }
+
 
 .hero-imagem img {
   width: 100%;
@@ -171,17 +184,20 @@ main {
   object-fit: cover;
 }
 
+
 .hero-text {
   grid-area: texto;
   display: grid;
   gap: var(--espaco-medio);
 }
 
+
 .hero-text h2,
 .sobre-resumo h2 {
   color: var(--cor-verde);
   font-size: var(--fonte-subtitulo);
 }
+
 
 .hero-text p,
 .sobre-resumo p {
@@ -202,26 +218,29 @@ main {
   justify-items: center;
 }
 
+
 .hero-imagem-secundaria img {
   width: 75%;
   max-width: 30rem;
 }
-
 
 #geracaoporusina {
   background-color: var(--cor-verde-secao);
   padding: var(--espaco-secao) 0;
 }
 
+
 #geracaoporusina > .container {
   display: grid;
   gap: var(--espaco-grande);
 }
 
+
 #geracaoporusina h2 {
   color: var(--cor-verde-escuro);
   font-size: var(--fonte-secao);
 }
+
 
 .geracaoporusina-horizontal {
   background-color: var(--cor-verde-claro);
@@ -233,6 +252,7 @@ main {
   gap: var(--espaco-grande);
   align-items: center;
 }
+
 
 .geracaoporusina-info {
   display: grid;
@@ -247,15 +267,18 @@ main {
   gap: var(--espaco-medio);
 }
 
+
 .usina-cabecalho h3 {
   color: var(--cor-verde);
   font-size: 1.3rem;
 }
 
+
 .kwp,
 .cidade {
   font-size: var(--fonte-pequena);
 }
+
 
 .usina-imagem img {
   width: 100%;
@@ -270,9 +293,11 @@ main {
   padding: var(--espaco-pequeno);
 }
 
+
 .saiba-mais {
   font-weight: 500;
 }
+
 
 .saiba-mais a {
   color: var(--cor-link);
@@ -280,32 +305,36 @@ main {
   text-decoration: none;
 }
 
+
 .saiba-mais a:hover {
   color: var(--cor-verde-escuro);
   text-decoration: underline;
 }
-
 
 #projetos {
   background-color: var(--cor-verde-claro);
   padding: var(--espaco-secao) 0;
 }
 
+
 #projetos > .container {
   display: grid;
   gap: var(--espaco-grande);
 }
+
 
 #projetos h2 {
   color: var(--cor-verde);
   font-size: var(--fonte-secao);
 }
 
+
 .grid-projetos {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(16rem, 1fr));
   gap: var(--espaco-grande);
 }
+
 
 .projeto {
   background-color: var(--cor-branco);
@@ -316,21 +345,23 @@ main {
   gap: var(--espaco-medio);
 }
 
+
 .projeto h3 {
   color: var(--cor-verde);
   font-size: 1.2rem;
 }
-
 
 #contato {
   background-color: var(--cor-verde-claro);
   padding: var(--espaco-secao) 0;
 }
 
+
 #contato > .container {
   display: grid;
   gap: var(--espaco-grande);
 }
+
 
 #contato h2 {
   color: var(--cor-verde);
@@ -345,9 +376,11 @@ form {
   gap: var(--espaco-pequeno);
 }
 
+
 form label {
   font-weight: 600;
 }
+
 
 form input,
 form textarea {
@@ -359,9 +392,11 @@ form textarea {
   font-size: var(--fonte-base);
 }
 
+
 form textarea {
   resize: vertical;
 }
+
 
 form button {
   width: fit-content;
@@ -374,10 +409,10 @@ form button {
   font-size: var(--fonte-base);
 }
 
+
 form button:hover {
   background-color: var(--cor-verde-escuro);
 }
-
 
 footer {
   background-color: var(--cor-verde-escuro);
@@ -387,10 +422,12 @@ footer {
   border-top: 0.1875rem solid var(--cor-amarelo);
 }
 
+
 footer .container {
   display: grid;
   gap: var(--espaco-pequeno);
 }
+
 
 footer a {
   color: var(--cor-amarelo-claro);
@@ -398,10 +435,143 @@ footer a {
   overflow-wrap: anywhere;
 }
 
+
 footer a:hover {
   text-decoration: underline;
 }
 
+#usina-detalhes {
+  background-color: var(--cor-verde-claro);
+  padding: var(--espaco-secao) 0;
+}
+
+
+#usina-detalhes h2,
+#dados-geracao h2,
+#retorno-investimento h2 {
+  color: var(--cor-verde);
+  font-size: var(--fonte-secao);
+  margin-bottom: var(--espaco-grande);
+}
+
+
+.usina-detalhes-conteudo {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--espaco-grande);
+  align-items: center;
+}
+
+
+.usina-detalhes-imagem {
+  display: grid;
+  justify-items: center;
+}
+
+
+.usina-detalhes-imagem img {
+  width: 100%;
+  max-width: 34.375rem;
+  height: auto;
+  border-radius: var(--raio-medio);
+}
+
+
+.usina-detalhes-informacoes {
+  background-color: var(--cor-branco);
+  border: 0.125rem solid var(--cor-verde-medio);
+  border-radius: var(--raio-medio);
+  padding: var(--espaco-grande);
+  display: grid;
+  gap: var(--espaco-medio);
+}
+
+
+.usina-detalhes-informacoes h3 {
+  color: var(--cor-verde);
+  font-size: 1.3rem;
+  margin-bottom: var(--espaco-pequeno);
+}
+
+
+.usina-detalhes-informacoes p {
+  overflow-wrap: anywhere;
+}
+
+#dados-geracao {
+  background-color: var(--cor-verde-secao);
+  padding: var(--espaco-secao) 0;
+}
+
+
+#dados-geracao > .container {
+  display: grid;
+  gap: var(--espaco-grande);
+}
+
+
+#dados-geracao p {
+  overflow-wrap: anywhere;
+}
+
+
+.tabela-imagem {
+  background-color: var(--cor-branco);
+  border: 0.125rem solid var(--cor-verde-medio);
+  border-radius: var(--raio-medio);
+  padding: var(--espaco-medio);
+  overflow-x: auto;
+}
+
+
+.tabela-imagem img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--raio-pequeno);
+}
+
+#retorno-investimento {
+  background-color: var(--cor-verde-claro);
+  padding: var(--espaco-secao) 0;
+}
+
+
+#retorno-investimento > .container {
+  display: grid;
+  gap: var(--espaco-medio);
+}
+
+
+#retorno-investimento p {
+  max-width: 56.25rem;
+  overflow-wrap: anywhere;
+}
+
+#voltar {
+  background-color: var(--cor-verde-claro);
+  padding: 0 0 var(--espaco-secao);
+}
+
+
+.botao-voltar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.5rem;
+  padding: 0.625rem 1.125rem;
+  background-color: var(--cor-verde);
+  color: var(--cor-branco);
+  border-radius: var(--raio-pequeno);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+
+.botao-voltar:hover {
+  background-color: var(--cor-verde-escuro);
+}
 
 @media (min-width: 56.25rem) {
 
@@ -411,6 +581,7 @@ footer a:hover {
     text-align: left;
   }
 
+
   .hero-container {
     grid-template-columns: 1fr 1.5fr;
     grid-template-areas:
@@ -418,23 +589,51 @@ footer a:hover {
       "sobre imagem2";
   }
 
+
   .geracaoporusina-horizontal {
     grid-template-columns: 2fr 3fr;
   }
+
+
+  .usina-detalhes-conteudo {
+    grid-template-columns: 1fr 1fr;
+  }
+
+
+  .usina-detalhes-imagem {
+    justify-items: start;
+  }
+
 }
-
-
 
 @media (min-width: 75rem) {
 
   #hero,
   #geracaoporusina,
   #projetos,
-  #contato {
+  #contato,
+  #usina-detalhes,
+  #dados-geracao,
+  #retorno-investimento {
     padding: 5rem 0;
   }
+
 
   .hero-container {
     gap: 3rem;
   }
+
+}
+
+@media (max-width: 34.375rem) {
+
+  .usina-detalhes-informacoes {
+    padding: var(--espaco-medio);
+  }
+
+
+  .tabela-imagem {
+    padding: var(--espaco-pequeno);
+  }
+
 }
