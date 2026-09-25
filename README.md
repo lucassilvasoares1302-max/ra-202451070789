@@ -25,11 +25,11 @@ Em cada disciplina:
 
 | Pasta 'trabalhos/' | Arquivo |
 |---|---|
-| index.html | - Main HTML |
-| trabalhoSTYLE.css | - Css das páginas |
-| usina-x.html | - Html da página da usina X |
-| usina-y.html | - Html da página da usina Y |
-| usina-z.html | - Html da página da usina Z |
+| index.html |  Main HTML |
+| trabalhoSTYLE.css |  Css das páginas |
+| usina-x.html |  Html da página da usina X |
+| usina-y.html |  Html da página da usina Y |
+| usina-z.html |  Html da página da usina Z |
 
 - A pasta 'imagens/' foi criada para alocação das imagens utilizadas nas páginas.
 
@@ -51,4 +51,6 @@ Em cada disciplina:
 
 ## Uso de Inteligência Artificial
 
-- 
+- Nesta atividade a IA foi utilizada para auxiliar mais ativamente no Css, no HTML houve ou auxilio porém de maneira mais pontual.
+- No layout da página principal no Html a IA me auxilou na reescrita de trechos de subtítulos onde a formatação ficava visualmente ruim, no redirecionamento para as páginas de detalhes e nas correções dos erros indicados após testes no W3C que basicamente eram erros de sintaxe.
+- No layout das páginas secundárias, 
