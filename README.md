@@ -53,4 +53,5 @@ Em cada disciplina:
 
 - Nesta atividade a IA foi utilizada para auxiliar mais ativamente no Css, no HTML houve ou auxilio porém de maneira mais pontual.
 - No layout da página principal no Html a IA me auxilou na reescrita de trechos de subtítulos onde a formatação ficava visualmente ruim, no redirecionamento para as páginas de detalhes e nas correções dos erros indicados após testes no W3C que basicamente eram erros de sintaxe.
-- No layout das páginas secundárias, 
+- No layout das páginas secundárias, pedi para a Ia adaptar o HTML que eu já tinha mas de forma resumida, tirando a aba de projetos e substituindo por retorno do investimento e onde seria os dados de geração da primeira página substituir somente pela imagem trazendo a informação. Analisando de forma geral a "máscara" das páginas secundárias é a mesma da primária, as mudanças de código são mínimas sendo até mais simples, a partir de feito a primeira foi só copiar substituindo com os dados da segunda e assim respectivamente.
+- 
