@@ -21,7 +21,7 @@ Em cada disciplina:
 
 - Neste repositório serão abordadas informações a respeito da geração fotovoltaica de 3 usinas localizadas em MG, abrangendo dados de geração e economia até projetos realizados para promoção do uso da energia sustentável.
   
-  https://lucassilvasoares1302-max.github.io/ra-202451070789/
+- Link aportado pelo GitPages: https://lucassilvasoares1302-max.github.io/ra-202451070789/
 
 | Pasta 'trabalhos/' | Arquivo |
 |---|---|
@@ -32,6 +32,7 @@ Em cada disciplina:
 | usina-z.html |  Html da página da usina Z |
 
 - A pasta 'imagens/' foi criada para alocação das imagens utilizadas nas páginas.
+- A pasta .github foi criada para direcionar em qual pasta está o arquivo deste repositório que será lançado no GitPages.
 
 ## Desenvolvimento
 
