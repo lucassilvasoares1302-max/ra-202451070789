@@ -47,4 +47,8 @@ Em cada disciplina:
 - Na sessão que trata sobre Geração por usina foi realizado um trabalho mais simples no layout, trazer poucas informações sobre cada usina e direcionar para uma segunda página onde seria abordado de forma mais aprofundada os dados de cada uma, porém, por mais simples que seja foi o trecho onde o trabalho foi mais complicado. O uso de contêineres era simples mas trazer toda formatação com títulos e subtítulos bem organizados foi um desafio, além do direncionamento para a outra página nessa sessão.
    > Inicialmente parecia simples mas a utilização do titulo "Usina X" e sua dimensão "1500 kwp" elocalização " Uberaba- MG porém se juntasse os 3 como div de cabeçalho visualmente não ficava de forma organizada por isso a opção de separar cada um como span class, particularmente segui essa opção depois de pedir sugestões para a IA nessa sessão, trarei um tópico de como utilizei a IA nesse repositório. E por último trazer um redirecionamento para uma outra página foi o maior desafio, porquê no código utilizado como base não havia algo do tipo e eu não tinha experiencia semelhante, porém na prática foi bem simples, pedi a orientação de uma IA para fazer e o que tive que acrescentar no código foi somente a "href="usina-y.html">aqui</a." respetivamente para cada usina e criar um HTML que seria o direcionamento trazendo estas informações.
 
-- Nas sessões de Projetos e contatos, foram onde menos precisei alterar do código usado como base
+- Nas sessões de Projetos e contatos, foram onde menos precisei alterar do código usado como base, foi necessário somente reescrever as cores no Css adequando ao modelo desta atividade.
+
+## Uso de Inteligência Artificial
+
+- 
