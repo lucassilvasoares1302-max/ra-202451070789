@@ -29,9 +29,4 @@ Em cada disciplina:
 | usina-y.html | - Html da página da usina Y |
 | usina-z.html | - Html da página da usina Z |
 
-- Main HTML 
-- Css das páginas 
-- Html da página da usina X
-- Html da página da usina Y
-- Html da página da usina Z
-- Pasta das imagens utilizadas nas páginas
+- A pasta 'imagens/' foi criada para alocação das imagens utilizadas nas páginas.
