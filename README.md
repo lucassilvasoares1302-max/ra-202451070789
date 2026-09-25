@@ -39,19 +39,19 @@ Em cada disciplina:
   > O primeiro passo foi a definição de um tema compatível com o projeto, que simultaneamente seja objetivo para a elaboração de indicadores e flexível para trabalharmos a criatividade do desenvolvimento, mas que não fuja do principal objetivo que seria a criação de um código em Html 5 e Css utilizando bem a ideia base de construção de layouts de sites de forma que acompanhe métodos e ferramentas de códigos atuais, e a geração de dados relacionadas à usinas fotovoltaicas é perfeita para este tipo de atividade.
 
 - Após a seleção de tema, o foco foi pensar em um layout que tenha boa acessibilidade e seja fiel ao tema abordado, por isso a utilização das cores verde e com os botões de navegação logo no primeiro cabeçalho justificando o uso do Header container com um grande titulo ao lado para entendimento do leito do que será tratado e onde se encontra no site.
-   > /* <header>
-    <div class="container header-container">
-      <h1>Geração Fotovoltaica de Fazendas em MG</h1>
-      <nav>
-        <ul>
-          <li><a href="#hero">Início</a></li>
-          <li><a href="#sobre">Sobre</a></li>
-          <li><a href="#geracaoporusina">Geração por usina</a></li>
-          <li><a href="#projetos">Projetos</a></li>
-          <li><a href="#contato">Contatos</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header> */
+   >  header>
+    div class="container header-container">
+      h1>Geração Fotovoltaica de Fazendas em MG</h1>
+      nav>
+        ul>
+          li><a href="#hero">Início</a></li>
+          li><a href="#sobre">Sobre</a></li>
+          li><a href="#geracaoporusina">Geração por usina</a></li>
+          li><a href="#projetos">Projetos</a></li>
+          li><a href="#contato">Contatos</a></li>
+        /ul>
+      /nav>
+    /div>
+  /header> */
 
   
