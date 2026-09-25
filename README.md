@@ -20,6 +20,7 @@ Em cada disciplina:
 ## Conteúdo
 
 - Neste repositório serão abordadas informações a respeito da geração fotovoltaica de 3 usinas localizadas em MG, abrangendo dados de geração e economia até projetos realizados para promoção do uso da energia sustentável.
+  
   https://lucassilvasoares1302-max.github.io/ra-202451070789/
 
 | Pasta 'trabalhos/' | Arquivo |
@@ -38,20 +39,9 @@ Em cada disciplina:
 
   > O primeiro passo foi a definição de um tema compatível com o projeto, que simultaneamente seja objetivo para a elaboração de indicadores e flexível para trabalharmos a criatividade do desenvolvimento, mas que não fuja do principal objetivo que seria a criação de um código em Html 5 e Css utilizando bem a ideia base de construção de layouts de sites de forma que acompanhe métodos e ferramentas de códigos atuais, e a geração de dados relacionadas à usinas fotovoltaicas é perfeita para este tipo de atividade.
 
-- Após a seleção de tema, o foco foi pensar em um layout que tenha boa acessibilidade e seja fiel ao tema abordado, por isso a utilização das cores verde e com os botões de navegação logo no primeiro cabeçalho justificando o uso do Header container com um grande titulo ao lado para entendimento do leito do que será tratado e onde se encontra no site.
-   >  header>
-    div class="container header-container">
-      h1>Geração Fotovoltaica de Fazendas em MG</h1>
-      nav>
-        ul>
-          li><a href="#hero">Início</a></li>
-          li><a href="#sobre">Sobre</a></li>
-          li><a href="#geracaoporusina">Geração por usina</a></li>
-          li><a href="#projetos">Projetos</a></li>
-          li><a href="#contato">Contatos</a></li>
-        /ul>
-      /nav>
-    /div>
-  /header> */
+- Após a seleção de tema, o foco foi pensar em um layout que tenha boa acessibilidade e seja fiel ao tema abordado, por isso a utilização das cores verde e com os botões de navegação logo no primeiro cabeçalho justificando o uso do Header container com um grande titulo ao lado para entendimento do leitor do que será tratado e onde se encontra no site.
 
-  
+- O próximo passo era trazer informações sobre o projeto que seria realizado e detalhes. No repositório utilizado como base havia uma sessão semelhante porém divida em partes e contêineres diferentes por tratar de assuntos diversos. Para o Hero deste projeto, a intenção era trazer uma introdução do problema abordado de maneira resumida e ilustrada, por isso o posicionamento de uma imagem logo ao lado da descrição, buscando trazer uma identificação visual do texto.
+   > A div que trata o "Sobre" foi um ponto de dúvida na decisão do layout, porquê por mais que sejam pontos diferentes o "Hero" e o "Sobre" se completam do ponto de vista do conteúdo, sendo um a abordagem e o outro a contextualização, por isso a decisão dos dois ficarem juntos na mesma sessão, sem a divisão de contêineres ou a criação de uma section específica para o Sobre.
+
+- 
