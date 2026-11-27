@@ -676,3 +676,44 @@ main p {
   }
 
 }
+
+/* Filtro de usinas - Versão React */
+
+.filtro-usinas {
+  display: grid;
+  gap: 0.5rem;
+  width: 100%;
+  max-width: 35rem;
+}
+
+.filtro-usinas label {
+  font-weight: 600;
+  color: var(--cor-verde-escuro);
+}
+
+.filtro-usinas input {
+  width: 100%;
+  padding: 0.75rem;
+  border: 1px solid var(--cor-borda-formulario);
+  border-radius: var(--raio-pequeno);
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.filtro-usinas input:focus-visible {
+  outline: 0.2rem solid var(--cor-amarelo);
+  outline-offset: 0.2rem;
+}
+
+.grid-projetos {
+  grid-template-columns:
+    repeat(auto-fit, minmax(min(100%, 16rem), 1fr));
+}
+
+button.botao-voltar {
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
