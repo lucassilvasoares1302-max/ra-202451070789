@@ -152,3 +152,110 @@ Terminou antes do tempo? Escolha um destes:
 - No painel Styles, clique no botão + e crie uma regra nova para o elemento. Ela nasce com qual seletor? Por que o DevTools escolheu esse?
 - Procure na página um elemento que tenha estilo inline (atributo style). Ele pode ser sobrescrito por uma regra da folha? Teste.
 - Encontre dois elementos irmãos com margin vertical e verifique no DevTools se o espaço entre eles é a soma das duas margens ou apenas a maior. Pesquise o nome desse comportamento.
+
+
+====================== ================================== =============================== =============================== ================================
+
+# PERÍCIA DE ESTILO
+
+## RODADA 01 — As regras que valem e as que morreram
+
+Elemento inspecionado: `<p>` class="alvo vermelho1"
+
+**Sua análise:**
+
+1. Três regras diferentes tentavam estilizar esse elemento.
+
+2. A regra `.vermelho1` perdeu porque o seletor `#alvo1` possui maior especificidade, pois utiliza um ID.
+
+3. Não existe declaração `!important` nessa primeira caixa.
+
+## RODADA 02 — De onde veio esse valor?
+
+Color: `#27ae60` — seletor `#alvo1`.
+
+Font-size: `19px` — seletor `.alvo`.
+
+Display: `block` — estilo padrão do navegador para elementos `<p>`.
+
+Margin-top: `1em` — estilo padrão do navegador para elementos `<p>`.
+
+**Sua análise:**
+
+1. Sim. Algumas propriedades recebem valores padrão do navegador, mesmo sem declaração no CSS.
+
+2. Porque o navegador converte as unidades utilizadas no CSS para pixels computados.
+
+3. A propriedade `color` pode ser herdada do elemento pai quando não existe uma declaração própria.
+
+## RODADA 03 — Quem ganha — agora com a conta feita
+
+1. Seletor vencedor: `#alvo1` — Especificidade: (1, 0, 0) — Cor: VERDE.
+
+2. Seletor vencedor: `#c2 p` — Especificidade: (1, 0, 1) — Cor: VERMELHO.
+
+3. Seletor vencedor: `.empate` (segunda declaração) — Especificidade: (0, 1, 0) — Cor: VERDE.
+
+4. Seletor vencedor: `style inline` — Especificidade: (1, 0, 0, 0) — Cor: VERMELHO.
+
+5. Seletor vencedor: `#alvo5 !important` — Especificidade: (1, 0, 0) — Cor: VERDE.
+
+6. Seletor vencedor: `.a6.b6` — Especificidade: (0, 2, 0) — Cor: VERDE.
+
+7. Seletor vencedor: herança do elemento pai `#c7` — Cor: VERDE.
+
+8. Seletor vencedor: `.card8 .destaque8 span` — Especificidade: (0, 2, 1) — Cor: VERMELHO.
+
+**Sua análise:**
+
+1. Porque o seletor `#c2 p` possui especificidade (1, 0, 1), maior que `.verde2`, que possui (0, 1, 0). O ID tem maior peso que uma classe.
+
+2. A ordem de declaração decidiu o resultado. Como as duas regras possuem a mesma especificidade, vence a última declaração, que define a cor verde.
+
+3. A cor verde foi herdada do elemento pai, que possui a propriedade `color` definida como verde.
+
+## RODADA 04 — A caixa é maior do que você pediu
+
+Margin: 10px.
+
+Border: 1px.
+
+Padding: 20px.
+
+Content: 200 x 50px.
+
+Largura total ocupada: 262px.
+
+**Sua análise:**
+
+1. A margem (margin), pois cria espaço externo entre o elemento e os elementos vizinhos.
+
+2. O padding, pois aumenta o espaço interno e a área ocupada pelo fundo e pela região clicável.
+
+3. Não necessariamente. No content-box, padding e bordas aumentam a largura total. No border-box, já estão incluídos na largura declarada.
+
+## RODADA 05 — O experimento do box-sizing
+
+Width declarado: 200px.
+
+Content-box: 242px.
+
+Border-box: 200px.
+
+Diferença: 42px.
+
+Essa diferença corresponde ao padding dos dois lados (40px) e às bordas dos dois lados (2px).
+
+**Sua análise:**
+
+1. Com o valor `border-box`, pois ele inclui o conteúdo, o padding e a borda dentro da largura declarada.
+
+2. Porque facilita o controle das dimensões dos elementos, evitando que padding e bordas aumentem inesperadamente o tamanho dos componentes.
+
+3. O conteúdo interno diminui para acomodar o padding, enquanto a largura total da caixa permanece a mesma.
+
+## DESAFIO BÔNUS
+
+Desafio escolhido: Margens verticais entre elementos irmãos.
+
+Resposta: Esse comportamento é chamado de colapso de margens (Margin Collapsing). Quando duas margens verticais adjacentes se encontram, geralmente não são somadas, prevalecendo a maior margem entre elas.
