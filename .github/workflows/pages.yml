@@ -1,3 +1,4 @@
+
 name: Publicar site no GitHub Pages
 
 on:
@@ -21,19 +22,34 @@ jobs:
       - name: Baixar arquivos do repositório
         uses: actions/checkout@v6
 
+      - name: Configurar Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Instalar dependências
+        working-directory: pw/trabalhos/react
+        run: npm ci
+
+      - name: Executar testes automatizados
+        working-directory: pw/trabalhos/react
+        run: npm run test
+
+      - name: Verificar código com ESLint
+        working-directory: pw/trabalhos/react
+        run: npm run lint
+
+      - name: Gerar build de produção
+        working-directory: pw/trabalhos/react
+        run: npm run build
+
       - name: Configurar GitHub Pages
         uses: actions/configure-pages@v5
-
-      - name: Preparar arquivos do site
-        run: |
-          mkdir site
-          cp -r pw/trabalhos/* site/
 
       - name: Enviar arquivos do site
         uses: actions/upload-pages-artifact@v4
         with:
-          path: './site'
-
+          path: './pw/trabalhos/react/dist'
 
   deploy:
     needs: build
