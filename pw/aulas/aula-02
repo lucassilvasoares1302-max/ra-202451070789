@@ -149,6 +149,77 @@ Terminou antes do tempo? Escolha um destes:
 =============== ===================== =========================== ============================ ========================= =====================
 
 
+# RESPOSTAS — PERÍCIA DE ESTRUTURA
 
+## RODADA 01 — Div soup × semântico
+
+(1) `<header>`  
+(2) `<nav>`  
+(3) `<main>`  
+(4) `<article>`  
+(5) `<aside>`  
+(6) `<footer>`
+
+**1.** A página B utiliza elementos semânticos que identificam a função de cada parte, facilitando a acessibilidade e a interpretação do código.
+
+**2.** A div `post` foi substituída por `<article>`, pois representa um conteúdo independente, como uma notícia ou publicação.
+
+**3.** Sim. O `<div>` é indicado para agrupar elementos sem significado semântico específico, principalmente para estilização e organização.
+
+## RODADA 02 — O mapa da página
+
+**Site investigado:** Wikipédia — Brasil.
+
+**1.** Aproximadamente 5 regiões: cabeçalho, navegação, conteúdo principal, lateral e rodapé.
+
+**2.** Utiliza elementos semânticos e divs. Classes: `mw-page-container` e `mw-body-content`.
+
+**3.** O ideal é existir apenas um `<main>` por página, identificando o conteúdo principal.
+
+## RODADA 03 — A hierarquia dos títulos
+
+1. h1 — Brasil
+2. h2 — Etimologia
+3. h2 — História
+4. h2 — Geografia
+5. h2 — Demografia
+
+**1.** Um `<h1>`. Mais de um pode dificultar a identificação do assunto principal.
+
+**2.** Não. A sequência apresentada mantém uma hierarquia organizada.
+
+**3.** Sim. Os títulos mostram que a página aborda o Brasil, sua história, geografia e população.
+
+## RODADA 04 — O alt que ninguém lê
+
+**Imagem 1:** Bandeira do Brasil — descritivo.
+
+**Imagem 2:** Brasão de armas do Brasil — descritivo.
+
+**Imagem 3:** Mapa do Brasil — descritivo.
+
+**1.** Sim, seria inútil, pois o nome do arquivo não descreve o conteúdo da imagem.
+
+**2.** Perderia informações visuais importantes, como mapas, símbolos e ilustrações.
+
+**3.** Mapa do Brasil destacando sua localização e divisão territorial.
+
+## RODADA 05 — O link fora de contexto
+
+**Link 1:** História — sim.
+
+**Link 2:** Geografia — sim.
+
+**Link 3:** Economia — sim.
+
+**1.** Links como "Saiba mais" são genéricos e não deixam claro o destino.
+
+**2.** Substituiria "Saiba mais" por "Conheça a história do Brasil".
+
+**3.** Sim. Pelo atributo `target="_blank"` dentro da tag `<a>`.
+
+## DESAFIO BÔNUS
+
+Um texto pode parecer título por causa do CSS, mas utilizar uma tag `<div>` ou `<p>`. Isso pode ser identificado pelo DevTools e prejudicar a acessibilidade, pois não apresenta uma hierarquia semântica de títulos.
 
 
