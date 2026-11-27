@@ -186,3 +186,146 @@ Terminou antes do tempo? Escolha um destes:
 ----------------------------- ----------------------------------------- ----------------------------------- ------------------------------------
 
 
+# =========== RESPOSTAS ===========
+
+## RODADA 01 — A linha que falta
+
+site-nao-responsivo.html em 360px:
+- Rolagem horizontal? (X) sim ( ) não
+- Texto legível? ( ) sim (X) não
+
+Site real em 360px:
+- Rolagem horizontal? ( ) sim (X) não
+
+Linha que falta:
+
+`<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+**Sua análise:**
+
+1. O celular utiliza uma largura virtual de aproximadamente 980px.
+2. Permite que o navegador adapte o layout à largura real da tela.
+3. É HTML, uma tag meta apresentada nas primeiras aulas.
+
+---
+
+## RODADA 02 — Caça aos breakpoints
+
+Site real escolhido: [Nome do site]
+
+1024px – Redução dos espaços e reorganização dos elementos.
+
+768px – Colunas reorganizadas e menu adaptado.
+
+480px – Elementos ocupam praticamente toda a tela.
+
+No CSS:
+
+`@media (max-width: 768px) { ... }`
+
+Total de breakpoints: 3 (valores ilustrativos).
+
+**Sua análise:**
+
+1. Utiliza max-width para adaptar o layout a telas menores.
+2. Números redondos representam tamanhos comuns; incomuns indicam ajustes específicos.
+3. Sim. Recursos como auto-fit e minmax() reorganizam elementos automaticamente.
+
+---
+
+## RODADA 03 — O teste do teclado
+
+- Chegar ao menu? (X) sim ( ) não
+- Chegar a um botão? (X) sim ( ) não
+- Usar a busca? (X) sim ( ) não
+- Identificar o foco? (X) sim ( ) não
+
+Quantidade de Tab: Depende da estrutura do site.
+
+Elemento inalcançável: Botão de inscrição criado com div.
+
+**Sua análise:**
+
+1. A falta de destaque do foco dificulta a navegação.
+2. Um link "Pular para o conteúdo" evita passar por todos os links.
+3. Não. O botão de inscrição não é acessível pelo teclado porque foi criado com uma div.
+
+---
+
+## RODADA 04 — A nota do Lighthouse
+
+Site 1: [Nome do site] — Nota: [Preencher] /100
+
+Problemas:
+1. Contraste insuficiente.
+2. Imagens sem atributo alt.
+3. Elementos sem nomes acessíveis.
+
+Site 2: [Nome do site] — Nota: [Preencher] /100
+
+Problema 1: Links sem identificação adequada.
+
+site-nao-responsivo.html — Nota: [Preencher] /100
+
+**Sua análise:**
+
+1. Sim. Contraste insuficiente é um problema comum em sites.
+2. Não. A nota 100 não garante acessibilidade completa, pois existem problemas que exigem testes manuais.
+3. Corrigiria imagens sem alt e melhoraria o contraste.
+
+---
+
+## RODADA 05 — Caça aos defeitos (sem espiar)
+
+1. Ausência da meta viewport — R — Inspeção HTML.
+2. Container com largura fixa de 1100px — R — Inspeção CSS.
+3. Imagem com largura fixa de 900px — R — Modo dispositivo.
+4. Tabela com largura fixa de 1000px — R — Inspeção CSS.
+5. Fontes definidas em pixels — R — Inspeção CSS.
+6. Ausência de media queries — R — Inspeção CSS.
+7. Contraste insuficiente — A — Lighthouse.
+8. Falta de indicador visual de foco — A — Teste com Tab.
+9. Imagem sem atributo alt — A — Inspeção HTML.
+10. Botão criado com div — A — Teste com Tab.
+11. Link com texto genérico — A — Inspeção HTML.
+12. Hierarquia incorreta de títulos — A — Inspeção HTML.
+13. Informação transmitida somente pela cor — A — Inspeção visual.
+14. Área de toque muito pequena — A — Inspeção CSS.
+
+Total: 14 de 14 defeitos.
+
+**Sua análise:**
+
+1. O Lighthouse identifica alguns problemas automaticamente, enquanto outros exigem testes manuais.
+2. O botão inacessível pelo teclado é o mais grave, pois impede algumas pessoas de realizar a inscrição.
+3. Corrigiria a imagem adicionando o atributo alt:
+
+`<img src="imagem.gif" alt="Banner da Feira de Adoção">`
+
+---
+
+## RODADA 06 — Dá para acertar com o dedo?
+
+Link do menu: 40 x 40 px — (X) sim ( ) não.
+
+Botão principal: 120 x 48 px — (X) sim ( ) não.
+
+Link do rodapé: 20 x 20 px — ( ) sim (X) não.
+
+Font-size do link do topo: 10px.
+
+**Sua análise:**
+
+1. A propriedade padding aumenta a área clicável sem aumentar o texto.
+2. Links de rodapé costumam ter fontes pequenas e pouco espaçamento.
+3. É uma falha de usabilidade do site, pois os elementos devem facilitar o toque.
+
+---
+
+## DESAFIO BÔNUS
+
+O atributo aria-label fornece uma descrição acessível para botões e links, permitindo que leitores de tela identifiquem suas funções.
+
+Exemplo:
+
+`<button aria-label="Fechar menu">X</button>`
