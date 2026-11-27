@@ -1,0 +1,99 @@
+
+[
+  {
+    "id": "x",
+    "nome": "Usina X",
+    "cidade": "Uberaba - MG",
+    "capacidade": 1500,
+    "investimento": 1750000,
+    "economiaMensal": 60000,
+    "imagem": "usina-x.jpg",
+    "tabela": "geracao-x.png",
+    "periodo": "Julho de 2025 a junho de 2026",
+    "descricao": "Usina localizada no Oeste de MG, inaugurada com o investimento de R$ 1.750.000,00. Sua previsão de economia mensal gira em torno de R$ 60.000,00."
+  },
+  {
+    "id": "y",
+    "nome": "Usina Y",
+    "cidade": "Varginha - MG",
+    "capacidade": 2000,
+    "investimento": 2500000,
+    "economiaMensal": 80000,
+    "imagem": "usina-y.jpg",
+    "tabela": "geracao-y.png",
+    "periodo": "Julho de 2025 a junho de 2026",
+    "descricao": "Usina localizada no Sul de MG, inaugurada com o investimento de R$ 2.500.000,00. Sua previsão de economia mensal gira em torno de R$ 80.000,00."
+  },
+  {
+    "id": "z",
+    "nome": "Usina Z",
+    "cidade": "Carlos Chagas - MG",
+    "capacidade": 2500,
+    "investimento": 3000000,
+    "economiaMensal": 100000,
+    "imagem": "usina-z.jpg",
+    "tabela": "geracao-z.png",
+    "periodo": "Julho de 2025 a junho de 2026",
+    "descricao": "Usina localizada no Norte de MG, inaugurada com o investimento de R$ 3.000.000,00. Sua previsão de economia mensal gira em torno de R$ 100.000,00."
+  },
+  {
+    "id": "a",
+    "nome": "Usina A",
+    "cidade": "Janaúba - MG",
+    "capacidade": 1800,
+    "investimento": 2100000,
+    "economiaMensal": 72000,
+    "imagem": "usina-x.jpg",
+    "tabela": "geracao-x.png",
+    "periodo": "Julho de 2025 a junho de 2026",
+    "descricao": "Usina localizada no Norte de MG, inaugurada com o investimento de R$ 2.100.000,00. Sua previsão de economia mensal gira em torno de R$ 72.000,00."
+  },
+  {
+    "id": "b",
+    "nome": "Usina B",
+    "cidade": "Pirapora - MG",
+    "capacidade": 2200,
+    "investimento": 2700000,
+    "economiaMensal": 88000,
+    "imagem": "usina-y.jpg",
+    "tabela": "geracao-y.png",
+    "periodo": "Julho de 2025 a junho de 2026",
+    "descricao": "Usina localizada no Norte de MG, inaugurada com o investimento de R$ 2.700.000,00. Sua previsão de economia mensal gira em torno de R$ 88.000,00."
+  },
+  {
+    "id": "c",
+    "nome": "Usina C",
+    "cidade": "Montes Claros - MG",
+    "capacidade": 3000,
+    "investimento": 3600000,
+    "economiaMensal": 120000,
+    "imagem": "usina-z.jpg",
+    "tabela": "geracao-z.png",
+    "periodo": "Julho de 2025 a junho de 2026",
+    "descricao": "Usina localizada no Norte de MG, inaugurada com o investimento de R$ 3.600.000,00. Sua previsão de economia mensal gira em torno de R$ 120.000,00."
+  },
+  {
+    "id": "d",
+    "nome": "Usina D",
+    "cidade": "Paracatu - MG",
+    "capacidade": 1600,
+    "investimento": 1900000,
+    "economiaMensal": 64000,
+    "imagem": "usina-x.jpg",
+    "tabela": "geracao-x.png",
+    "periodo": "Julho de 2025 a junho de 2026",
+    "descricao": "Usina localizada no Noroeste de MG, inaugurada com o investimento de R$ 1.900.000,00. Sua previsão de economia mensal gira em torno de R$ 64.000,00."
+  },
+  {
+    "id": "e",
+    "nome": "Usina E",
+    "cidade": "Januária - MG",
+    "capacidade": 2400,
+    "investimento": 2900000,
+    "economiaMensal": 96000,
+    "imagem": "usina-y.jpg",
+    "tabela": "geracao-y.png",
+    "periodo": "Julho de 2025 a junho de 2026",
+    "descricao": "Usina localizada no Norte de MG, inaugurada com o investimento de R$ 2.900.000,00. Sua previsão de economia mensal gira em torno de R$ 96.000,00."
+  }
+]
